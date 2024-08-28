@@ -41,6 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'escola.apps.EscolaConfig',
+    'tipoatividade.apps.TipoatividadeConfig',
+    'titulos.apps.TitulosConfig',
+    'aluno.apps.AlunoConfig', 
+    'turma.apps.TurmaConfig',
+    'contato.apps.ContatoConfig',
+    'instrutor.apps.InstrutorConfig',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +65,7 @@ ROOT_URLCONF = 'setup.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,7 +128,21 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_dirs=[
+    os.path.join(BASE_DIR, 'setup/static')
+]
+
+STATIC_ROOT= os.path.join(BASE_DIR, 'static')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Sites Confiaveis
+
+CSRF_TRUSTED_ORIGINS =[
+    'http://127.0.0.1:8000/', #desenvolvimento local
+    'http://localhost:8000/', #desenvolvimento local
+        
+    ]
