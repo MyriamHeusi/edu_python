@@ -4,10 +4,11 @@ Projeto educativo desenvolvido para estudos e prática de **Python**, explorando
 
 ## 🚀 Tecnologias Utilizadas
 - Python 3
-- Jupyter Notebook
-- Pandas / NumPy
-- Matplotlib / Seaborn
+- Flask
+- HTML / CSS
+- SQLite 
 - VSCode
+
 
 ## 💡 Objetivos
 - Praticar lógica e sintaxe Python
@@ -30,6 +31,7 @@ Projeto educativo desenvolvido para estudos e prática de **Python**, explorando
 🔗 [GitHub](https://github.com/MyriamHeusi)  
 🔗 [LinkedIn](https://br.linkedin.com/in/myriam-heusi)  
 📧 myriam.heusi@gmail.com
+
 
 
 
